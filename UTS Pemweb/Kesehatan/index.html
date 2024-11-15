@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Kesehatan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('about')">About</a>
+        <a href="javascript:void(0)" onclick="showSection('content')">Content</a>
+    </div>
+    
+
+    <div class="container">
+        <section id="home" class="section active">
+            <h2>Informasi Terkini</h2>
+            <p>Berita terbaru di kesehatan menyoroti meningkatnya minat pada gaya hidup sehat di 2024, 
+                seperti latihan kekuatan untuk menjaga otot dan aktivitas luar ruangan seperti hiking yang bermanfaat bagi kesehatan mental dan fisik. 
+                Pola makan berbasis nabati dan rendah indeks glikemik juga makin populer, mendukung kontrol gula darah dan ketahanan tubuh. 
+                Teknologi wearable berbasis AI pun membantu pemantauan kesehatan dengan lebih akurat! </p>
+        </section>
+
+        <section id="content" class="section">
+            <h1 class="section-title">
+                <img src="C:\Users\ASUS\Downloads\download.jpeg" alt="Logo Kesehatan" class="logo"> Informasi Tentang Kesehatan
+            </h1>
+
+            <p>Menjaga kesehatan adalah kunci untuk hidup yang panjang dan produktif. Dengan pola makan yang seimbang, olahraga teratur, dan tidur yang cukup, kita dapat menghindari banyak penyakit dan meningkatkan kualitas hidup. Berikut adalah beberapa manfaat dari menjaga kesehatan yang perlu Anda ketahui:</p>
+
+            <!-- Olahraga Rutin -->
+            <div class="item">
+                <img src="C:\Users\ASUS\Downloads\png-transparent-green-leaf-logo-health-fitness-and-wellness-health-care-healthy-diet-physical-fitness-health-coaching-yellow-line-thumbnail-removebg-preview.png" alt="Olahraga" />
+                <div class="description">
+                    <h3>Olahraga Rutin</h3>
+                    <p>Olahraga teratur tidak hanya menjaga tubuh tetap bugar, tetapi juga meningkatkan suasana hati dan membantu mencegah penyakit kronis seperti diabetes, penyakit jantung, dan kanker.</p>
+                </div>
+            </div>
+
+            <!-- Pola Makan Sehat -->
+            <div class="item">
+                <img src="C:\Users\ASUS\Downloads\01.webp" alt="Makanan Sehat" />
+                <div class="description">
+                    <h3>Pola Makan Sehat</h3>
+                    <p>Mengonsumsi makanan yang kaya serat, vitamin, dan mineral sangat penting untuk menjaga tubuh tetap kuat dan berenergi. Makanan sehat juga membantu memperbaiki sel-sel tubuh dan meningkatkan daya tahan tubuh.</p>
+                </div>
+            </div>
+
+            <!-- Tidur Berkualitas -->
+            <div class="item">
+                <img src="C:\Users\ASUS\Downloads\02.png" alt="Tidur Berkualitas" />
+                <div class="description">
+                    <h3>Tidur Berkualitas</h3>
+                    <p>Memiliki waktu tidur yang cukup dan berkualitas sangat berpengaruh terhadap kesehatan mental dan fisik. Tidur yang baik membantu proses pemulihan tubuh, memperbaiki sistem kekebalan tubuh, dan meningkatkan kinerja otak.</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3>Manfaat Menjaga Kesehatan</h3>
+                <table>
+                    <tr>
+                        <th>Manfaat</th>
+                        <th>Deskripsi</th>
+                        <th>Harga</th>
+                    </tr>
+                    <tr>
+                        <td>Meningkatkan Energi</td>
+                        <td>Olahraga dan pola makan sehat dapat meningkatkan energi tubuh.</td>
+                        <td>Rp50.000</td>
+                    </tr>
+                    <tr>
+                        <td>Memperkuat Sistem Imun</td>
+                        <td>Pola hidup sehat membantu tubuh untuk melawan penyakit.</td>
+                        <td>Rp70.000</td>
+                    </tr>
+                    <tr>
+                        <td>Meningkatkan Kualitas Tidur</td>
+                        <td>Dengan tidur yang cukup, tubuh bisa pulih dan berfungsi optimal.</td>
+                        <td>Rp60.000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-container">
+                <h3>Formulir Konsultasi Kesehatan</h3>
+                <form id="orderForm">
+                    <label for="name">Nama:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="age">Usia:</label><br>
+                    <input type="number" id="age" name="age" min="1" required><br><br>
+
+                    <label for="healthIssue">Masalah Kesehatan:</label><br>
+                    <select id="healthIssue" name="healthIssue">
+                        <option value="Mudah Lelah">Mudah Lelah</option>
+                        <option value="Sakit Kepala">Sakit Kepala</option>
+                        <option value="Gangguan Tidur">Gangguan Tidur</option>
+                        <option value="Migrain">Migrain</option>
+                        <option value="Stres dan Kecemasan">Stres dan Kecemasan</option>
+                    </select><br><br>
+
+                    <label for="service">Pilih Layanan:</label><br>
+                    <select id="service" name="service">
+                        <option value="Konsultasi Dasar" data-price="50000">Konsultasi Dasar - Rp50.000</option>
+                        <option value="Konsultasi Lanjutan" data-price="100000">Konsultasi Lanjutan - Rp100.000</option>
+                        <option value="Paket Lengkap" data-price="150000">Paket Lengkap - Rp150.000</option>
+                    </select><br><br>
+
+                    <label for="prescription">Tambah Resep:</label><br>
+                    <select id="prescription" name="prescription">
+                        <option value="Tanpa Resep" data-price="0">Tanpa Resep</option>
+                        <option value="Resep Dasar" data-price="30000">Resep Dasar - Rp30.000</option>
+                        <option value="Resep Lanjutan" data-price="50000">Resep Lanjutan - Rp50.000</option>
+                    </select><br><br>
+
+                    <button type="button" onclick="submitConsultation()">Konsultasi Sekarang</button>
+                </form>
+                <p id="confirmationMessage" style="margin-top: 20px;"></p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h3>About Us</h3>
+            <p>Hubungi kami di:</p>
+            <ul>
+                <li>Telepon: 081234567890</li>
+                <li>Email: info@kesehatan.com</li>
+            </ul>
+            <p>Ikuti kami di media sosial:</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/dexvillsblood_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>        
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

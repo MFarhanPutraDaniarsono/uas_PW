@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Profil</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#portfolio">Proyek</a></li>
+            <li><a href="#contact">Hubungi Saya</a></li>
+        </ul>
+    </nav>    
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <img src="./WhatsApp Image 2023-09-17 at 17.44.36.jpeg" alt="Foto Profil">
+            <h1>Moh Farhan <span>Putra Daniarsono</span></h1>
+            <p>Ini adalah situs portofolio resmi saya untuk menampilkan keterampilan dan pengalaman saya dalam pengembangan web. 
+                Jika Anda membutuhkan dorongan atau arahan untuk mencapai tujuan pribadi atau profesional, saya siap memberikan saran yang bermanfaat.</p>
+            <a href="#" class="download-cv">DOWNLOAD CV</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <p>Nama saya Moh Farhan Putra Daniarsono, saya lahir pada tanggal 25 Juni 2005. Saat ini, 
+            saya sedang menempuh pendidikan di politeknik harapan bersama kota tegal dan berada di semester 3. 
+            Saya sangat menyukai olahraga futsal dan sering berlatih bersama teman-teman. Selain itu, 
+            saya juga memiliki minat dalam desain, kreativitas, dan pengembangan diri. 
+            Saya percaya bahwa olahraga, khususnya futsal, 
+            membantu menjaga kebugaran tubuh serta memperkuat kerjasama tim dan keterampilan komunikasi.</p>
+        <div class="about-items">
+            <div class="about-item">
+                <h3>Keterampilan</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Desain UI/UX</li>
+                </ul>
+            </div>
+            <div class="about-item">
+                <h3>Pengalaman</h3>
+                <p>Saya memiliki besik 1 tahun pengalaman dalam pengembangan web, 
+                    belajar di politeknik harapan bersama kota tegal. Saya telah berkolaborasi dengan tim untuk mengembangkan
+                    situs web yang ramah pengguna dan fungsional untuk berbagai klien.</p>
+            </div>
+            <div class="about-item">
+                <h3>Pendidikan</h3>
+                <p>Madrasah Aliyah Negri Kota Tegal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>Proyek</h2>
+        <p>Berikut adalah beberapa pekerjaan terbaru saya. Setiap proyek menampilkan keterampilan saya dalam desain web.</p>
+        <div class="portfolio-items">
+            <!-- Project 1 -->
+            <div class="portfolio-item">
+                <a href="https://www.kompasiana.com/muhammadfarhan5107/6673e6c234777c6786085973/transformasi-sepak-bola-indonesia-langkah-langkah-menuju-kejayaan-global" target="_blank">
+                    Artikel tentang transformasi sepak bola indonesia 
+                </a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="portfolio-item">
+                <a href="https://www.youtube.com/watch?v=Ad70OaJof_I&t=608s" target="_blank">
+                    Website tentang majelis dan jadwal
+                </a>
+            </div>
+            
+            <!-- Award Section -->
+            <div class="portfolio-item">
+                <a href="https://www.youtube.com/" target="_blank">
+                 Weblog di drupal dengan materi UI/UX
+                </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Hubungi Saya</h2>
+        <p>Jika Anda memiliki proyek yang ingin dibicarakan atau membutuhkan bantuan dalam pengembangan web, jangan ragu untuk menghubungi saya. Saya tersedia untuk pekerjaan lepas dan kolaborasi.</p>
+        <a href="mailto:muhammadfarhan250605@gmail.com" id="contact-link">Hubungi Saya</a>
+    </section>    
+
+    <script src="script.js"></script>
+    <script>
+        // Hero Image Click Animation
+        const heroImage = document.querySelector(".hero-content img");
+        heroImage.addEventListener("click", () => {
+            heroImage.style.transform = "scale(9.9)";
+            heroImage.style.transition = "transform 9.9s ease";
+            setTimeout(() => {
+                heroImage.style.transform = "scale(1)"; // Kembali ke ukuran semula
+            }, 300); // Efek selama 300ms
+        });
+    </script>
+</body>
+</html>
